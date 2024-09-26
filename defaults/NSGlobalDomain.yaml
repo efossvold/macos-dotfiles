@@ -1,0 +1,28 @@
+---
+description: NSGlobalDomain
+sudo: false
+current_host: false
+data:
+  NSGlobalDomain:
+    # Jump's to the spot that's clicked on the scroll bar
+    AppleScrollerPagingBehavior: 1
+
+    # Finder: show all filename extensions
+    AppleShowAllExtensions: true
+
+    # Expand save panel by default
+    NSNavPanelExpandedStateForSaveMode: true
+    NSNavPanelExpandedStateForSaveMode2: true
+
+    # Expand print panel by default
+    PMPrintingExpandedStateForPrint: true
+    PMPrintingExpandedStateForPrint2: true
+
+    # Disable auto-correct
+    NSAutomaticSpellingCorrectionEnabled: false
+
+    # Mouse pointer speed
+    com.apple.mouse.scaling: 2.0
+
+    # Trackpad pointer speed
+    com.apple.trackpad.scaling: 1.0

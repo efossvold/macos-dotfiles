@@ -1,0 +1,89 @@
+# Roots of the synchronization
+root = /Users/erikfossvold
+root = /Users/erikfossvold/Library/Mobile Documents/com~apple~CloudDocs/Unison
+prefer = newer
+atomic = Name .git*
+
+# Keep a backup copy of every file in a central location
+backuplocation = central
+backupdir = /Users/erikfossvold/.unison/cache
+backup = Name *
+backupprefix = $VERSION.
+backupsuffix =
+
+# Treat a symbolic link transparently
+# Use case: Create a subdirectory called shared (or current, or whatever) in your home directory on each host,
+#   and put links to all the files you want to synchronize into this directory.
+follow = Name *
+
+contactquietly = true
+
+# Paths to synchronize
+# path = shared
+# path = current
+# path = common
+
+## macOS
+# path = Library/KeyBindings/DefaultKeyBinding.dict
+# path = Library/PDF Services
+# path = Library/Preferences/com.apple.symbolichotkeys.plist
+# path = Library/Scripts
+# path = Library/Speech/Speakable Items
+# path = Library/Workflows
+ignore = Name {.DS_Store}
+
+## 1Password
+path = Library/Preferences/com.1password.1password.plist
+
+## aria2
+path = .aria2
+
+## Brave Browser
+path = Library/Application Support/BraveSoftware/Brave-Browser/Default/History
+path = Library/Application Support/BraveSoftware/Brave-Browser/Default/Preferences
+
+## Crossover
+path = com.codeweavers.CrossOver.yaml
+
+## Finder
+path = Library/Preferences/com.apple.finder.plist
+
+## Fish shell
+path = .config/fish
+
+## git
+path = .gitconfig
+
+## iTerm2
+path = Library/Preferences/com.googlecode.iterm2.plist
+path = Library/Preferences/com.googlecode.iterm2.private.plist
+
+## IINA
+path = Library/Preferences/com.colliderli.iina.plist
+
+## LaunchAgents
+# Unison sync script
+path = Library/LaunchAgents/com.unison.plist
+
+## Node Version Manager
+path = .nvmrc
+
+## Proton
+path = Library/Preferences/ch.protonmail.desktop.plist
+path = Library/Preferences/ch.protonvpn.mac.plist
+path = Library/Containers/ch.protonmail.drive/Data/Library/Preferences/ch.protonmail.drive.plist
+
+## ruby
+path = .gemrc
+
+# Scripts
+path = .local/bin
+
+# SSH
+path = .ssh/config
+
+## Spotify
+path = Library/Preferences/com.spotify.client.plist
+
+## Terminal
+path = Library/Preferences/com.apple.Terminal.plist

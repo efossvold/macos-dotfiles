@@ -1,0 +1,29 @@
+---
+description: com.apple.Finder
+sudo: false
+current_host: false
+data:
+  com.apple.Finder:
+    # Show hidden files by default
+    AppleShowAllFiles: true
+
+    # Keep folders on top
+    _FXSortFoldersFirst: true
+
+    # When performing a search, search the current folder by default
+    FXDefaultSearchScope: "SCcf"
+
+    # Use list view in all Finder windows by default
+    # Four-letter codes for all the views: Icons (icnv), List (nlsv), Columns (clmv), and Gallery (glyv) - https://krypted.com/mac-os-x/change-default-finder-views-using-defaults/
+    FXPreferredViewStyle: "nlsv"
+
+    # Show status bar
+    ShowStatusBar: true
+
+    # Show path bar
+    ShowPathbar: true
+
+    # Set Documents as the default location for new Finder windows
+    # For other paths, use `PfLo` and `file:///full/path/here/`
+    # NewWindowTarget:  "PfDe"
+    # NewWindowTargetPath: "file://${HOME}/Documents/"

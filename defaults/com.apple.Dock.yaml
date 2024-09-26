@@ -1,0 +1,43 @@
+---
+description: com.apple.Dock
+sudo: false
+current_host: false
+data:
+  com.apple.Dock:
+    # Turn off automatic hide/show the Dock
+    autohide: false
+
+    # Icon size
+    tilesize: 51.0
+
+    # Turn on magnification
+    magnification: true
+    largesize: 67.0
+
+    # Don’t show recent applications in Dock
+    show-recents: false
+    recent-apps: []
+
+    # Set up hot corners
+    # Possible values:
+    #  0: no-op
+    #  1: no-op
+    #  2: Mission Control
+    #  3: Show application windows
+    #  4: Desktop
+    #  5: Start screen saver
+    #  6: Disable screen saver
+    #  7: Dashboard
+    # 10: Put display to sleep
+    # 11: Launchpad
+    # 12: Notification Center
+    # 13: Lock Screen
+    # 14: Quick Note
+    wvous-bl-corner: 1 # bottom-left
+    wvous-bl-modifier: 0
+    wvous-br-corner: 1 # bottom right
+    wvous-br-modifier: 0
+    wvous-tl-corner: 2 # top-left (mission control)
+    wvous-tl-modifier: 0
+    wvous-tr-corner: 1 # top right
+    wvous-tr-modifier: 0

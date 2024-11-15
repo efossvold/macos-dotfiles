@@ -15,6 +15,7 @@ for app in "Activity Monitor" \
     "Safari" \
     "SystemUIServer" \
     "Terminal" \
+    "WallpaperAgent" \
     "iCal"; do
     killall "${app}" &>/dev/null
 done

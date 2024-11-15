@@ -24,6 +24,10 @@ brew 'wget' # Download files from the web
 brew 'bun' # node alternative / JavaScript runtime
 brew 'httpie' # API testing client
 brew 'openssl'
+brew 'ruby'
+brew 'git-delta' # git output in colors
+brew 'pyenv' # Python version management
+brew 'pyenv-virtualenv' # Pyenv plugin to manage virtualenv
 # brew 'pngquant' # Image compression
 # brew 'oxipng' # Image compression
 # brew 'grpcurl' # gRPC testing tool for CLI
@@ -44,7 +48,8 @@ brew 'openssl'
 cask '1password' # Password manager
 cask '1password-cli'
 cask 'adobe-acrobat-reader'
-# cask 'backblaze' # Backup files to the cloud
+cask 'backblaze' # Backup files to the cloud
+cask 'balenaetcher' # Write iso/images to USB
 cask 'brave-browser' # Web browser
 cask 'cleanmymac' # Tool to remove unnecessary files and folders from disk
 cask 'crossover' # Windows emulator
@@ -88,6 +93,11 @@ cask 'vlc' # Multimedia player
 cask 'whatsapp' # Messaging client
 cask 'youtube-to-mp3' # Downloads music from playlists or channels
 cask 'zoom' # Video communication and virtual meeting platform
+
+# Musescore
+cask 'musescore' # Open-source music notation software
+brew 'poppler' # PDF rendering library
+brew 'qpdf' # Tools for and transforming and inspecting PDF files
 
 # Quicklook
 # cask 'qlmarkdown' # $ xattr -r -d com.apple.quarantine "FULL PATH OF THE QLMarkdown.app (you can drag the file to get the pull path)" - https://github.com/sbarex/QLMarkdown

@@ -14,6 +14,11 @@ data:
     NSNavPanelExpandedStateForSaveMode: true
     NSNavPanelExpandedStateForSaveMode2: true
 
+    # Close windows when quitting an application
+    # When enabled, open documents and windows will not be
+    # restored when you re-open an application
+    NSQuitAlwaysKeepsWindows: 0
+
     # Expand print panel by default
     PMPrintingExpandedStateForPrint: true
     PMPrintingExpandedStateForPrint2: true
@@ -22,7 +27,7 @@ data:
     NSAutomaticSpellingCorrectionEnabled: false
 
     # Mouse pointer speed
-    com.apple.mouse.scaling: 2.0
+    com.apple.mouse.scaling: 2.5
 
     # Trackpad pointer speed
     com.apple.trackpad.scaling: 1.0

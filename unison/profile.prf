@@ -18,15 +18,10 @@ follow = Name *
 
 contactquietly = true
 
-# Paths to synchronize
-# path = shared
-# path = current
-# path = common
-
 ## macOS
-# path = Library/KeyBindings/DefaultKeyBinding.dict
+path = Library/KeyBindings/DefaultKeyBinding.dict
 # path = Library/PDF Services
-# path = Library/Preferences/com.apple.symbolichotkeys.plist
+path = Library/Preferences/com.apple.symbolichotkeys.plist
 # path = Library/Scripts
 # path = Library/Speech/Speakable Items
 # path = Library/Workflows
@@ -35,6 +30,9 @@ ignore = Name {.DS_Store}
 ## 1Password
 path = Library/Preferences/com.1password.1password.plist
 
+## Affinity Photo
+path = Library/Containers/com.seriflabs.affinityphoto/Data/Library/Preferences/com.seriflabs.affinityphoto.plist
+
 ## aria2
 path = .aria2
 
@@ -42,17 +40,42 @@ path = .aria2
 path = Library/Application Support/BraveSoftware/Brave-Browser/Default/History
 path = Library/Application Support/BraveSoftware/Brave-Browser/Default/Preferences
 
+## CleanMyMac
+path = Library/Preferences/com.macpaw.CleanMyMac4.HealthMonitor.plist
+path = Library/Preferences/com.macpaw.CleanMyMac4.Menu.plist
+path = Library/Preferences/com.macpaw.CleanMyMac4.plist
+path = Library/Preferences/com.macpaw.site.theunarchiver.plist
+
 ## Crossover
-path = com.codeweavers.CrossOver.yaml
+path = Library/Preferences/com.codeweavers.CrossOver.plist
 
 ## Finder
 path = Library/Preferences/com.apple.finder.plist
 
+## Firefox
+path = Library/Preferences/org.mozilla.firefox.plist
+
 ## Fish shell
 path = .config/fish
 
+## Flux
+path = Library/Preferences/org.herf.Flux.plist
+
 ## git
 path = .gitconfig
+
+## GOG Galaxy
+path = Library/Preferences/com.gog.galaxy.cef.renderer.plist
+
+## Handbrak
+path = Library/Containers/fr.handbrake.HandBrake/Data/Library/Application Support/HandBrake/UserPresets.json
+path = Library/Preferences/fr.handbrake.HandBrake.plist
+
+## Hex Fiend
+path = Library/Preferences/com.ridiculousfish.HexFiend.plist
+
+## HTTPie
+path = .httpie/config.json
 
 ## iTerm2
 path = Library/Preferences/com.googlecode.iterm2.plist
@@ -61,23 +84,71 @@ path = Library/Preferences/com.googlecode.iterm2.private.plist
 ## IINA
 path = Library/Preferences/com.colliderli.iina.plist
 
-## LaunchAgents
-# Unison sync script
+## Image2Icon
+path = Library/Preferences/net.shinyfrog.image2icon.plist
+
+## ImageOptim
+path = Library/Preferences/net.pornel.ImageOptim.plist
+
+# Unison sync script (LaunchAgents)
 path = Library/LaunchAgents/com.unison.plist
+
+## Marked 2
+path = Library/Containers/com.brettterpstra.marked2/Data/Library/Application Support/Marked 2/Custom CSS
+
+## Messenger
+path = Library/Preferences/com.facebook.archon.developerID.plist
+
+## Microsoft Office
+path = Library/Preferences/com.microsoft.*
+
+## MuseScore 4
+path = Library/Preferences/org.musescore.MuseScore.plist
+path = Library/Preferences/org.musescore.MuseScore4.plist
+
+## NameChanger
+path = Library/Preferences/com.mrrsoftware.NameChanger.plist
 
 ## Node Version Manager
 path = .nvmrc
 
+## Ocenaudio
+path = Library/Preferences/com.ocenaudio.plist
+
+## OpenEmu
+path = Library/Preferences/org.openemu.OpenEmu.plist
+
+## Parallels
+path = Library/Preferences/com.parallels.*
+
+## PDF Squeezer
+path = Library/Preferences/com.witt-software.PDF-Squeezer.plist
+path = Library/Containers/com.witt-software.PDF-Squeezer/Data/Library/Preferences/com.witt-software.PDF-Squeezer.plist
 ## Proton
 path = Library/Preferences/ch.protonmail.desktop.plist
+path = Library/Preferences/ch.protonmail.drive.plist
 path = Library/Preferences/ch.protonvpn.mac.plist
 path = Library/Containers/ch.protonmail.drive/Data/Library/Preferences/ch.protonmail.drive.plist
 
+## Rectangle
+path = Library/Preferences/com.knollsoft.Rectangle.plist
+
 ## ruby
 path = .gemrc
+path = .irbrc
+path = .gem/credentials
+path = .pryrc
+path = .aprc
 
 # Scripts
 path = .local/bin
+
+# Sourcetree
+path = Library/Application Support/SourceTree/sourcetree.license
+path = Library/Application Support/SourceTree/browser.plist
+path = Library/Application Support/SourceTree/hgrc_sourcetree
+path = Library/Application Support/SourceTree/hostingservices.plist
+path = Library/Preferences/com.torusknot.SourceTreeNotMAS.plist
 
 # SSH
 path = .ssh/config
@@ -85,5 +156,17 @@ path = .ssh/config
 ## Spotify
 path = Library/Preferences/com.spotify.client.plist
 
+## Sublime Text
+path = Library/Application Support/Sublime Text/Local
+
+## Switch
+path = Library/Preferences/com.nchsoftware.switch.plist
+
 ## Terminal
 path = Library/Preferences/com.apple.Terminal.plist
+
+## Transmission
+path = Library/Preferences/org.m0k.transmission.plist
+
+## VLC
+path = Library/Preferences/org.videolan.vlc.plist

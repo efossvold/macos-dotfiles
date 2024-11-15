@@ -14,6 +14,7 @@ git push -u origin feat/KULADM-1198-migrate-from-create-react-app-to-vite
 #############################################################
 brew install poppler
 brew install ruby
+brew install qpdf 
 gem install pdfunite
 
 cd ~/Documents/Music

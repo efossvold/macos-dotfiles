@@ -1,4 +1,30 @@
 #############################################################
+# mise
+#############################################################
+# Use node v24 globally
+mise u --global node@24
+mise u --global python@3.10
+# Use node v24 in current folder
+mise u node@24
+# Enable autocompletion
+mise completion fish > ~/.config/fish/completions/mise.fish
+# Set env var
+mise set MY_VAR=123
+echo $MY_VAR
+# If node = "22" in mise.toml, upgrades to latest ver. of node 22
+mise upgrade node
+# Upgrade to latest version of node (i.e. 22 to 24)
+mise upgrade --bump node
+# List outdated tools
+mise outdated
+# List all available versions of a tool (i.e. node)
+mise ls-remote node
+# List all available versions of a tool starting with version
+mise ls-remote python 3
+# Lists information about installed/active tools
+mise ls
+
+#############################################################
 # git
 #############################################################
 git checkout feat/KULADM-1198-migrate-from-create-react-app-to-vite
@@ -50,25 +76,23 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 #############################################################
 # Brew
 #############################################################
-Get Xcode command line tools from https://developer.apple.com/downloads/index.action?=command%20line%20tools#
-bash
+# Get Xcode command line tools from https://developer.apple.com/downloads/index.action?=command%20line%20tools#
+# Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew install fish httpie node yarn wget watch htop bat rename aria2 fswatch b2-tools
 brew install jpeg libpng libxtiff libyaml openssl  webp brew
 # bun
 brew tap oven-sh/bun && brew install bun
-# image compression utils
-brew install pngquant oxipng
 # mkcert (nss needed for certificates to work in Firefox)
 brew install mkcert nss
 # cmake is needed for yarn when binaries for current architecture needs to be compiled
 brew install cmake
-# innoextract for extract GOG games offline installers (https://constexpr.org/innoextract/)
-brew install innoextract
 # buf (required for protobuf linting in VSCode)
 # https://marketplace.visualstudio.com/items?itemName=bufbuild.vscode-buf
 brew install bufbuild/buf/buf
+# Remove unused packages/leaves
+brew autoremove
 
 
 #############################################################

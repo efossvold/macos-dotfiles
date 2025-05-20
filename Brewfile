@@ -15,10 +15,10 @@ brew 'rename' # Batch renamer
 brew 'unison' # Sync tool
 brew 'watch' # Watch a command's output changes over time
 brew 'wget' # Download files from the web
+brew 'mise' # Polyglot runtime manager (asdf rust clone)
 # brew 'jq' # JSON parser
 # brew 'mackup' # Backup and restore app settings on macOS
 # brew 'tree' # Display directories as trees 
-# brew 'ncdu' # Disk usage analyzer
 
 # Development
 brew 'bun' # node alternative / JavaScript runtime
@@ -26,28 +26,20 @@ brew 'httpie' # API testing client
 brew 'openssl'
 brew 'ruby'
 brew 'git-delta' # git output in colors
-brew 'pyenv' # Python version management
-brew 'pyenv-virtualenv' # Pyenv plugin to manage virtualenv
+
 # brew 'pngquant' # Image compression
 # brew 'oxipng' # Image compression
 # brew 'grpcurl' # gRPC testing tool for CLI
 # brew 'imagemagick' # Image processing library
 # brew 'gh' # GitHub CLI
-# brew 'git'
-# brew 'direnv' # Load/unload environment variables based on current directory
-# brew 'pyenv' # Python version manager
 # cask 'adoptopenjdk' # Java JDK
-# brew 'jpeg'
-# brew 'libjpeg'
-# brew 'libpng'
-# brew 'libxtiff'
-# brew 'libyaml'
 
 
 # Apps
 cask '1password' # Password manager
 cask '1password-cli'
 cask 'adobe-acrobat-reader'
+cask 'adapter' # Converts video, audio and images
 cask 'backblaze' # Backup files to the cloud
 cask 'balenaetcher' # Write iso/images to USB
 cask 'brave-browser' # Web browser
@@ -67,10 +59,11 @@ cask 'httpie' # Testing client for REST, GraphQL, and HTTP APIs
 cask 'iina' # Free and open-source media player
 cask 'image2icon' # Icon creator and file and folder customiser
 cask 'imageoptim' # Tool to optimise images to a smaller size
-cask 'iterm2' # Terminal emulator as alternative to Apple's Terminal app
+cask 'ghostty' # Terminal emulator
 cask 'messenger' # Meta Messenger (formerly Facebook)
-cask 'microsoft-excel' # Microsoft Office
-cask 'microsoft-word' # Microsoft Office
+#cask 'microsoft-excel' # Microsoft Office
+#cask 'microsoft-word' # Microsoft Office
+#cask 'microsoft-teams' # Microsoft Teams
 cask 'namechanger' # Rename a list of files quickly
 cask 'parallels@18' # Parallels Desktop (virtualization software) [NB. Needs full disk access]
 cask 'piezo' # Audio recording application
@@ -80,7 +73,6 @@ cask 'proton-drive' # Client for Proton Drive
 cask 'proton-mail' # Client for Proton Mail
 cask 'protonvpn' # VPN client
 cask 'rectangle' # Window manager
-cask 'skype' # Video chat, voice call and instant messaging application
 cask 'sourcetree' # Graphical client for Git version control
 cask 'spotify' # Music player/streamer
 cask 'steam' # Video game digital distribution service
@@ -88,10 +80,11 @@ cask 'sublime-text' # Text editor for code, markup and prose
 cask 'suspicious-package' # Application for inspecting installer packages
 cask 'the-unarchiver' # Decompression util
 cask 'transmission' # Open-source BitTorrent client
-cask 'visual-studio-code' 
+cask 'visual-studio-code' # code editor
 cask 'vlc' # Multimedia player 
 cask 'whatsapp' # Messaging client
 cask 'youtube-to-mp3' # Downloads music from playlists or channels
+cask 'zed' # code editor
 cask 'zoom' # Video communication and virtual meeting platform
 
 # Musescore

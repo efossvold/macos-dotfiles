@@ -1,9 +1,12 @@
-#!/usr/bin/env fish
+#!/bin/bash
+# NOTE: Need to give /opt/homebrew/Cellar/unison/x.xx.x/bin/unison Full Disk Access
+# in System Settings (under Privacy and Security) for script to work
+# Add to launch agent by running:
+# launchctl load -w ~/Library/LaunchAgents/com.unison.plist
 
-# set -x BASEDIR (dirname (status --current-filename))
-# set -x LOG_FILE $BASEDIR/unison-sync.log 
+BASEDIR=$(dirname "$0")
+LOG_FILE=$BASEDIR/unison-sync.log 
 
-# unison profile -batch &> $LOG_FILE
-unison profile -batch 
-# date '+%Y-%m-%d %H:%M:%S' >> $LOG_FILE
-# cat $LOG_FILE
+:>$LOG_FILE
+
+/opt/homebrew/bin/unison profile -batch &> $LOG_FILE

@@ -61,6 +61,10 @@ path = .config/fish
 ## Flux
 path = Library/Preferences/org.herf.Flux.plist
 
+## Ghostty
+path = Library/HTTPStorages/com.mitchellh.ghostty
+path = Library/Application Support/com.mitchellh.ghostty
+
 ## git
 path = .gitconfig
 
@@ -77,12 +81,12 @@ path = Library/Preferences/com.ridiculousfish.HexFiend.plist
 ## HTTPie
 path = .httpie/config.json
 
+## IINA
+path = Library/Preferences/com.colliderli.iina.plist
+
 ## iTerm2
 path = Library/Preferences/com.googlecode.iterm2.plist
 path = Library/Preferences/com.googlecode.iterm2.private.plist
-
-## IINA
-path = Library/Preferences/com.colliderli.iina.plist
 
 ## Image2Icon
 path = Library/Preferences/net.shinyfrog.image2icon.plist
@@ -102,15 +106,15 @@ path = Library/Preferences/com.facebook.archon.developerID.plist
 ## Microsoft Office
 path = Library/Preferences/com.microsoft.*
 
+## Mise
+path = .config/mise/config.toml
+
 ## MuseScore 4
 path = Library/Preferences/org.musescore.MuseScore.plist
 path = Library/Preferences/org.musescore.MuseScore4.plist
 
 ## NameChanger
 path = Library/Preferences/com.mrrsoftware.NameChanger.plist
-
-## Node Version Manager
-path = .nvmrc
 
 ## Ocenaudio
 path = Library/Preferences/com.ocenaudio.plist
@@ -170,3 +174,6 @@ path = Library/Preferences/org.m0k.transmission.plist
 
 ## VLC
 path = Library/Preferences/org.videolan.vlc.plist
+
+## Zed
+path = .config/zed
